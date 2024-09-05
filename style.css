@@ -127,6 +127,12 @@ body{
 }
 .list li img{
     width: 75px;
+    cursor: pointer;
+}
+.list li img:hover{
+    transform: scale(1.1);
+    transform: rotateY(360deg);
+    transition: 2s;
 }
 
 .projects_section{
@@ -165,6 +171,9 @@ body{
     padding: 10px;
     color: white;
 }
+.project a{
+    text-decoration: none;
+}
 .project button{
     display: flex;
     justify-content: center;
@@ -177,8 +186,32 @@ body{
     cursor: pointer;
     width: 129px;
     height: 42px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.2s;
 }
-
+.project button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #4F2255;
+    z-index: -1;
+    transition: all 250ms
+}
+.project button:hover {
+    border: none;
+    transform: scale(1.1);
+}   
+.project button:hover::before {
+    width: 100%;
+    border-radius: 10px;
+}
+.project button:active{
+    transform: scale(0.95);
+}
 .contact_section{
     display: flex;
     flex-direction: column;
@@ -232,6 +265,14 @@ body{
     color: white;
     cursor: pointer;
     padding: 12px 24px;
+
+    transition: all 0.2s;
+}
+.contact_him button:hover{
+    transform: scale(1.1);
+}
+.contact_him button:active{
+    transform: scale(0.95);
 }
 
 .footer_section{
@@ -255,14 +296,36 @@ body{
     gap: 65px;
     margin-top: 30px;
 }
+.social_icons a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s;
+}
+.social_icons a:hover{
+    color: rgb(0, 0, 43);
+    transform: scale(1.2);
+}
+.social_icons a:active{
+    transform: translate(-5px, -5px);
+}
 .github p{
     font-size: 18px;
     font-weight: 200;
 }
-.git_info{
+.git_info a{
+    text-decoration: none;
+    color: white;
     display: flex;
     align-items: center;
     gap: 22px;
     margin-top: 18px;
     font-size: 30px;
+    transition: all 0.2s;
+}
+.git_info a:hover{
+    color: rgb(167, 144, 209);
+    transform: scale(1.2);
+}
+.git_info a:active{
+    transform: translate(-5px, -5px);
 }
