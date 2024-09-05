@@ -38,6 +38,25 @@ body{
     color: white;
     font-size: 18px;
     font-weight: 500;
+    position: relative;
+    transition: all 0.1s ease-in-out;
+}
+.navbar a:hover{
+    transform: translate(-5px, -5px) scale(1.05);
+}
+.navbar a ::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.1s ease-in-out;
+}
+.navbar a:hover ::after{
+    width: 100%;
 }
 
 .top_section{
