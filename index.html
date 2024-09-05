@@ -13,50 +13,77 @@
     <header class="nav">
         <img src="assets/LogoSite-light.png" alt="logo">
         <div class="navbar">
-            <a href="#">Skills</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
+            <a href="#skills"><i class="fa-solid fa-screwdriver-wrench"></i> Skills</a>
+            <a href="#projetos"><i class="fa-solid fa-gear"></i> Projetos</a>
+            <a href="#contato"><i class="fa-solid fa-envelope"></i> Contato</a>
         </div>
     </header>
-    <div class="top">
+    <div class="top_section">
         <div class="details">
             <h1>Oi👋, eu sou<br> Software Developer</h1>
             <p>Sou Thalisson Manoel, um desenvolvedor dedicado a se tornar uma programar cada vez melhor, uma linha de código por vez.</p>
         </div>
         <img src="assets/Perfil.png" alt="Thalisson Manoel">
     </div>
-    <div class="skill_section">
-        <h3>Skills</h3>
+    <div id="skills" class="skill_section">
+        <h3 class="title_section">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            Skills
+        </h3>
         <div class="group_skill_section">
             <div class="text_skill">
                 <p>Tenho uma vasta experiência nas seguintes tecnologias:</p>
                 <ul class="list">
-                    <li><img src="assets/skill.png" alt="html"></li>
-                    <li><img src="assets/skill-1.png" alt="css"></li>
-                    <li><img src="assets/skill-2.png" alt="unity"></li>
-                    <li><img src="assets/skill-3.png" alt="c#"></li>
-                    <li><img src="assets/skill-4.png" alt="sql"></li>
-                    <li><img src="assets/skill-5.png" alt="github"></li>
-                    <li><img src="assets/skill-6.png" alt="figma"></li>
+                    <li>
+                        <img src="assets/skills/html.svg" alt="html">
+                        <p>html</p>
+                    </li>
+                    <li>
+                        <img src="assets/skills/css.svg" alt="css">
+                        <p>css</p>
+                    </li>
+                    <li>
+                         <img src="assets/skills/unity.svg" alt="unity">
+                         <p>unity</p>
+                    </li>
+                    <li>
+                         <img src="assets/skills/c++++.svg" alt="c#">
+                         <p>c#</p>
+                    </li>
+                    <li>
+                         <img src="assets/skills/sql.svg" alt="sql">
+                         <p>sql</p>
+                    </li>
+                    <li>
+                         <img src="assets/skills/github.svg" alt="github">
+                         <p>github</p>
+                    </li>
+                    <li>
+                         <img src="assets/skills/figma.svg" alt="figma">
+                         <p>figma</p>
+                    </li>
                 </ul>
             </div>
             <img src="assets/CheckList.png" alt="CheckListImg">
         </div>
     </div>
-    <div class="projects_section">
+    <div id="projetos" class="projects_section">
         <div class="title">
-            <h3><i class="fa-solid fa-gear"></i> Projetos</h3>
+            <h3 class="title_section">
+                <i class="fa-solid fa-gear"></i>
+                Projetos
+            </h3>
             <p>Alguns projetos já feitos</p>
         </div>
         <div class="projects_container">
             <div class="project">
                 <img src="assets/Turistar.png" alt="">
-                <p>Primeiro projeto de “Instabio” usando  HTML 5 e  CSS 3</p>
+                <p>Criamos um projeto para intensificar o turismo regional usando a UNITY e C#</p>
                 <button>Saiba Mais <i class="fa-solid fa-arrow-right"></i></button>
             </div>
             <div class="project">
                 <img src="assets/Instabio.png" alt="">
-                <p>Criamos um projeto para intensificar o turismo regional usando a UNITY e C#</p>
+                <p>Primeiro projeto de “Instabio” usando  HTML 5 e  CSS 3</p>
                 <button>Saiba Mais <i class="fa-solid fa-arrow-right"></i></button>
             </div>
             <div class="project">
@@ -66,6 +93,42 @@
             </div>
         </div>
     </div>
-
+    <div id="contato"class="contact_section">
+        <h3 class="title_section">
+            <i class="fa-solid fa-envelope"></i>
+            Contato
+        </h3>
+        <div class="contact">
+            <img src="assets/contact.png" alt="ContactImg">
+            <div class="contact_him">
+                <input type="text" id="email" placeholder="Digite o endereço de e-mail">
+                <input type="text" id="message" placeholder="Digite a mensagem...">
+                <button>
+                    Enviar Mensagem
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="footer_section">
+        <div class="footer_content">
+            <div class="social">
+                <p>Minhas redes sociais:</p>
+                <div class="social_icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+            <div class="github">
+                <p>Mais projetos:</p>
+                <div class="git_info">
+                    <i class="fa-brands fa-github"></i>
+                    <p>@ThalissonNG</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
