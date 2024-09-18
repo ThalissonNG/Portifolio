@@ -117,6 +117,7 @@ body{
     align-items: center;
     color: white;
     margin: 34px 230px 180px;
+    opacity: 0;
 }
 @media (max-width: 1450px){
     .skill_section{
