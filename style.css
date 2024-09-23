@@ -117,11 +117,11 @@ body{
     align-items: center;
     color: white;
     margin: 34px 230px 180px;
-    opacity: 0;
 }
 @media (max-width: 1450px){
     .skill_section{
         margin: 34px 20px 180px;
+        gap: 30px;
     }
 }
 .title_section{
