@@ -109,15 +109,35 @@
         <div class="contact">
             <img src="assets/contact.png" alt="ContactImg">
             <div class="contact_him">
-                <!-- <input type="text" id="email" placeholder="Digite o endereço de e-mail"> -->
+                <p>Mensagem pelo whatsapp</p>
+                <input type="text" id="email" placeholder="Digite o endereço de e-mail">
                 <input type="text" id="message" placeholder="Digite a mensagem...">
                 <button id="sendWhatsapp">
-                    Enviar Mensagem
-                    <i class="fa-solid fa-paper-plane"></i>
+                    Enviar whatsapp
+                    <i class="fa-brands fa-whatsapp"></i>
                 </button>
+        <p>Mensagem pelo e-mail</p>
+        <input type="text" name="name" id="email" placeholder="Seu nome" required>
+        <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+        <input type="text" name="message" id="message" placeholder="Digite sua mensagem" required>
+        <input type="hidden" name="_template" value="box">
+        <button type="submit" id="sendWhatsapp">
+            Enviar Mensagem
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
             </div>
         </div>
     </div>
+    <!-- <form action="https://formsubmit.co/manoelthalisson28@gmail.com" method="POST" class="contact_him">
+        <input type="text" name="name" id="email" placeholder="Seu nome" required>
+        <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+        <input type="text" name="message" id="message" placeholder="Digite sua mensagem" required>
+        <input type="hidden" name="_template" value="box">
+        <button type="submit" id="sendWhatsapp">
+            Enviar Mensagem
+            <i class="fa-solid fa-paper-plane"></i>
+        </button> -->
+   </form>
     <div class="footer_section">
         <div class="footer_content">
             <div class="social">
@@ -149,7 +169,6 @@
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
